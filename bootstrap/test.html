@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add text to DIV using JavaScript</title>
+</head>
+<body>
+    <p>
+    	<input type='button' onclick='fillData()' value='Fill Div with Data'>
+    </p>
+    
+  	<div id='container'>
+    	<p>
+        	Content inside p element.
+        </p>
+    </div>
+</body>
+<script>
+    let fillData = () => {
+        let ele = document.getElementById('container');
+        ele.innerHTML += 'Hello, I am Arun';
+    }
+</script>
+</html>

@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <!--HEADER -->
+            <header name="header" class="bg-light">
+                <nav class="container navbar navbar-expand-lg navbar-light position-relative">
+                    <div class="logo position-absolute mx-3">
+                        <a class="navbar-brand" href="main.html"><img id="logoImage" src="../images/logo.png" alt="LOGO"></a>
+                    </div>
+                    <div class="contact d-flex flex-column position-absolute mx-3">
+                        <h4 class="number">+380731296496</h4>
+                        <h4 class="number">+380731296496</h4>
+                        
+                        <!-- Button trigger modal -->
+                        <label class="btn btn-link text-muted" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Feed back
+                        </label>
+                    </div>
+                </nav>
+            </header>
+
+
+            <!--MENU -->
+            <menu name="menu" class="nav-footer position-sticky d-flex align-items-center justify-content-center">
+                <ul class="d-flex list-style-none m-0 p-0">
+                    <li> <a class="text-white px-2" href="main.html">Main</a></li>
+                    <li> <a class="text-white px-2" href="index.html">Catalog</a></li>
+                    <li> <a class="text-white px-2" href="index.html">Order</a></li>
+                    <li> <a class="text-white px-2" href="index.html">Price list</a></li>
+                    <li>  <a class="text-white px-2" href="index.html">Contact</a></li>
+                </ul>
+            </menu>
+
+
+            <!--SLIDER -->
+            <div name="slider" id="carouselExampleFade" class="carousel slide carousel-fade mb-2" data-bs-ride="carousel" data-interval="4000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class=" w-100" src="../images/1.jpeg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="../images/2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="../images/3.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="../images/4.jpg" alt="fourth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="../images/5.jpg" alt="Fifth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="../images/6.jpg" alt="Sixth slide">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- HISTORY -->
+            <div class="container">
+                <div class=" row">
+                    <ol class="history breadcrumb bg-white">
+                        <li class="breadcrumb-item"><a class="text-secondary" href="#">Catalog</a></li>
+                        <li class="breadcrumb-item"><a class="text-secondary" href="#">Dress</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Jaranga dress</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!--CATALOG-->
+            <div class="container">
+                <div class="row">
+
+                    <!-- LEFT BLOCK -->
+                    <div id="leftBlock" class="col-2 position-absolute p-0">
+                        <div class="row product-list align-content-start">
+                            <div class="w-100 btn-link text-secondary" onclick="toggleClass('shorts')">Shorts</div>
+                            <ul id="shorts" class="dropdown-list text-secondary">
+                                <a href="index.html"><li class="btn-link text-secondary">T-shorts & Tops</li></a>
+                                <a href="index.html"><li class="btn-link text-secondary">Hodie & Sweatshirts</li>
+                                <a href="index.html"><li class="btn-link text-secondary">Pants</li></a>
+                                <a href="index.html"><li class="btn-link text-secondary">Shorts</li></a>
+                            </ul>
+                            <div class="w-100 btn-link text-secondary" onclick="toggleClass('dress')">Dress</div>
+                            <ul id="dress" class="dropdown-list d-none text-secondary">
+                                <a href="index.html"><li class="btn-link text-secondary">Midi dress</li></a>
+                                <a href="index.html"><li class="btn-link text-secondary">Shift Dress</li></a>
+                                <a href="index.html"><li class="btn-link text-secondary">Bodycon Dress</li></a>
+                                <a href="index.html"><li class="btn-link text-secondary">Mini Dress</li></a>
+                            </ul>
+                            <div class="w-100 btn-link text-secondary" onclick="toggleClass('bags')">Bags</div>
+                            <ul id="bags" class="dropdown-list d-none text-secondary">
+                                <a href="index.html"><li class="btn-link text-secondary">Sling Bag</li></a>
+                                <a href="index.html"><li class="btn-link text-secondary">Crossbody</li></a>
+                                <a href="index.html"><li class="btn-link text-secondary">Satchel</li></a>
+                                <a href="index.html"><li class="btn-link text-secondary">Backpack</li></a>
+                            </ul>
+                            <div class="w-100 btn-link text-secondary" onclick="toggleClass('accessories')">Accessories</div>
+                            <ul id="accessories" class="dropdown-list d-none text-secondary">
+                                <a href="index.html"><li class="btn-link text-secondary">Balls</li></a>
+                                <a href="index.html"><li class="btn-link text-secondary">Gloves</li></a>
+                                <a href="index.html"><li class="btn-link text-secondary">Hats & Beanies</li></a>
+                                <a href="index.html"><li class="btn-link text-secondary">Phone Cases</li></a>
+                            </ul>
+                            <div class="w-100 btn-link text-secondary" onclick="toggleClass('shoes')">Shoes</div>
+                            <ul id="shoes" class="dropdown-list d-none text-secondary">
+                                <a href="index.html"><li class="btn-link text-secondary">Sneakers</li></a>
+                                <a href="index.html"><li class="btn-link text-secondary">Running</li></a>
+                                <a href="index.html"><li class="btn-link text-secondary">Soccer</li></a>
+                                <a href="index.html"><li class="btn-link text-secondary">Golf</li></a>
+                            </ul>
+                        </div>
+                        <div class="row pt-5 w-100 align-content-center">
+                            <a class="text-dark d-block" href="index.html">
+                                <div class="d-flex align-items-center fit-content flex-column">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" style="fill: black !important;" class="bi bi-file-earmark-spreadsheet" viewBox="0 0 16 16">
+                                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5v2zM3 12v-2h2v2H3zm0 1h2v2H4a1 1 0 0 1-1-1v-1zm3 2v-2h3v2H6zm4 0v-2h3v1a1 1 0 0 1-1 1h-2zm3-3h-3v-2h3v2zm-7 0v-2h3v2H6z"/>
+                                    </svg>
+                                    Price List
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CENTER BLOCK -->
+                    <div id="centerBlock" class="col-8">
+                        <div class="catalog row" value="1">
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                        </div>
+                        <div class="catalog row d-none" value="2">
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                        </div>
+                        <div class="catalog row d-none" value="3">
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                        </div>
+                        <div class="catalog row d-none" value="4">
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                        </div>
+                        <div class="catalog row d-none" value="5">
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                        </div>
+                        <div class="catalog row d-none" value="6">
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                            <div class="col-12 col-md-6 col-lg-4"></div>
+                        </div>
+                        <div class="btn-toolbar mb-3 d-flex justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label for="option1" onclick="show('1')" class="btn btn-outline-secondary active">
+                                    <input type="radio" name="options" id="option1" checked> 1
+                                </label>
+                                <label for="option2" onclick="show('2')" class="btn btn-outline-secondary">
+                                    <input type="radio" name="options" id="option2"> 2
+                                </label>
+                                <label for="option3" onclick="show('3')" class="btn btn-outline-secondary">
+                                    <input type="radio" name="options" id="option3"> 3
+                                </label>
+                                <label for="option4" onclick="show('4')" class="btn btn-outline-secondary">
+                                    <input type="radio" name="options" id="option4"> 4
+                                </label>
+                                <label for="option5" onclick="show('5')" class="btn btn-outline-secondary">
+                                    <input type="radio" name="options" id="option5"> 5
+                                </label>
+                                <label for="option6" onclick="show('6')" class="btn btn-outline-secondary">
+                                    <input type="radio" name="options" id="option6"> 6
+                                </label>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--ABOUT PRODUCTS-->
+            <div class="container about d-flex justify-content-center">
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-6 p-3">
+                            <span class="text-secondary">
+                                qweqweqweqw eqweqweqweq weqweqweqw eqweqweqwe qweqweqweqw eqweqweqwe qweqweqwe
+                            </span>
+                    </div>
+                        <div class="col-6 p-3">
+                            <span class="text-secondary">
+                            qweqweqweqw eqweqweqweq weqweqweqw eqweqweqwe qweqweqweqw eqweqweqwe qweqweqwe
+                            </span>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+
+
+        <!--FOOTER -->
+        <footer name="footer">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-5 d-flex flex-column">
+                        <span class="text-secondary">
+                            2020-2022 podyh company
+                        </span>
+                        <span class="text-secondary">
+                            m.plaksyuk@podyh.com
+                        </span>
+                    </div>
+                    <ul class="col-3 list-group list-group-flush">
+                        <a class="text-secondary" href="main.html"> <li class="list-item">Home</li></a>
+                        <a class="text-secondary" href="index.html"> <li class="list-item">Catalog</li></a>
+                        <a class="text-secondary" href="index.html"> <li class="list-item">Order</li></a>
+                        <a class="text-secondary" href="index.html"> <li class="list-item">Price list</li></a>
+                        <a class="text-secondary" href="index.html"> <li class="list-item">Contact</li></a>
+                    </ul>
+                    <div class="col-4 ">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261
+                                .793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756
+                                -1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304
+                                3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469
+                                -2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266
+                                1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653
+                                1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.4
+                                3.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386
+                                0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <div class="col d-flex flex-column px-3">
+                                <span class="text-secondary">
+                                    Website development
+                                </span>
+                                <a href="https://github.com/mplaksyuk" class="text-secondary link">mplaksyuk</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="w-100 d-flex justify-content-center">
+                <h5 class="modal-title text-dark" id="exampleModalLabel">Feedback</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <div class="p-2 d-flex flex-column align-items-center">
+                <span class="text-secondary">Your name</span>
+                <input type="text" class="form-control w-100">
+            </div>
+            <div class="p-2 d-flex flex-column align-items-center">
+                <span class="text-secondary">Phone</span>
+                <input type="phone" class="form-control w-100">
+            </div>
+            <div class="p-2 d-flex flex-column align-items-center">
+                <span class="text-secondary">Email</span>
+                <input type="email" class="form-control w-100">
+            </div>
+            <div class="p-2 d-flex flex-column align-items-center">
+                <span class="text-secondary">Message</span>
+                <textarea class="form-control" aria-label="With textarea" rows="5"></textarea>
+            </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-secondary w-25" data-dismiss="modal">Send</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--TEMPLATES-->
+    <template id="tproduct">
+            <div class="product">
+                <figure class="product-image bg-light p-2">
+                    <img class="w-100 h-75 pb-2"alt='Image')></img>
+
+                    <div class="product-meta">
+                        <a href="index.html">
+                            <h3 class="product-title text-muted btn-link"></h3>
+                        </a>
+                        <div class="d-flex">
+                            <h4 style="font-size: 0.9375rem;">
+                                UAH&nbsp;
+                            </h4>
+                            <h4 class="product-price">
+                            </h4>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+    </template>
+
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  </body>
+</html>

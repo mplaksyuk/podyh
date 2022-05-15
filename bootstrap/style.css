@@ -1,0 +1,319 @@
+@font-face {
+	font-family: Architectural;
+	src: url("fonts/Architectural-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat-VariableFont_wght.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    src: url("fonts/BebasNeue Bold.ttf") format("truetype"), url("fonts/BebasNeue Bold.otf") format("opentype");
+    font-family: 'BebasNeue';
+    font-weight: bold;
+    font-style: normal; }
+  
+  @font-face {
+    src: url("fonts/BebasNeue Regular.ttf") format("truetype"), url("fonts/BebasNeue Regular.otf") format("opentype");
+    font-family: 'BebasNeue';
+    font-weight: normal;
+    font-style: normal; }
+  
+  @font-face {
+    src: url("fonts/BebasNeue Book.ttf") format("truetype"), url("fonts/BebasNeue Book.otf") format("opentype");
+    font-family: 'BebasNeue';
+    font-weight: 300;
+    font-style: normal; }
+  
+  @font-face {
+    src: url("fonts/BebasNeue Light.ttf") format("truetype"), url("fonts/BebasNeue Light.otf") format("opentype");
+    font-family: 'BebasNeue';
+    font-weight: 200;
+    font-style: normal; }
+  
+  @font-face {
+    src: url("fonts/BebasNeue Thin.ttf") format("truetype"), url("fonts/BebasNeue Thin.otf") format("opentype");
+    font-family: 'BebasNeue';
+    font-weight: 100;
+    font-style: normal; }
+
+#logoImage {
+    width:140px;
+}
+#logoImage{
+    font-style: italic;
+    font-size: 6rem;
+}
+#leftBlock, .dropdown-list{
+    margin-left: 10px;
+}
+.dropdown-list {
+    margin-left: 20px;
+}
+
+.product-list {
+    height: 250px;
+}
+#centerBlock {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.history {
+    margin-left: 10px;
+}
+
+* {
+    font-family: "PT Sans";
+}
+
+menu, header, footer{
+    min-width: 100%;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+  
+#content-wrap {
+    padding-bottom: 10rem;    /* Footer height */
+}
+  
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10rem;            /* Footer height */
+}
+.navbar-brand {
+    font-size: -webkit-xxx-large;
+}
+
+.nav-footer {
+    background-color: rgb(191, 191, 191);
+    width: 100%;
+    height: 70px;
+    z-index:2;
+    top: 0px;
+}
+.nav-footer a {
+    font-size: x-large;
+    font-weight:lighter;
+}
+.nav-footer a:not(:first-child) {
+    border-left: 1px solid;
+}
+header nav {
+    min-height: 150px;
+    max-height: 150px;
+}
+nav .logo {
+    left: 0;
+}
+nav .contact {
+    right: 0;
+}
+.number {
+    font-family: 'Montserrat' !important;
+    font-weight: 300;
+}
+menu {
+    padding: 0;
+    margin: 0;
+    z-index: 3 !important;
+}
+
+menu li:not(:last-child) {
+    border-right: 2px solid white;
+}
+
+#carouselExampleFade {
+    max-height: 500px;
+}
+
+#carouselExampleFade img {
+    max-width: 100%;
+    min-height: 500px;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-indicators{
+    z-index: 2 !important;
+}
+button.close {
+    top: 6px;
+    right: 8px;
+}
+
+.product-image img {
+    object-fit: contain;
+    height: 300px;
+}
+
+.product-title, .product-price{
+    margin-bottom: 0.3125rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9375rem;
+}
+
+.about .row {
+    border-top: 1px solid rgb(170, 170, 170);
+}
+
+
+.about {
+    margin: 3rem;
+}
+
+input[type="radio"] {
+    outline: none;
+}
+
+.active {
+    background-color: none !important;
+}
+
+.btn.focus, input:focus {
+    outline: 0 !important;
+}
+
+.article-intro, .article-header {
+    position: relative; }
+  
+  .article-intro .article-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: auto; }
+  
+  .article-intro .article-block {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: .4em .6em; }
+    @media (min-width: 768px) {
+      .article-intro .article-block {
+        padding: .5em 1em; } }
+    @media (min-width: 1200px) {
+      .article-intro .article-block {
+        padding: .6em 1.6em; } }
+  
+  .article-intro .article-title {
+    font-family: 'BebasNeue';
+    font-weight: 300;
+    font-size: 2.5em;
+    color: black;
+    line-height: .8em; }
+    @media (min-width: 576px) {
+      .article-intro .article-title {
+        font-size: 3.5em; } }
+    @media (min-width: 768px) {
+      .article-intro .article-title {
+        font-size: 4.5em; } }
+    @media (min-width: 1200px) {
+      .article-intro .article-title {
+        font-size: 6em; } }
+  
+  .article-intro .article-text {
+    color: black;
+    font-weight: 500;
+    padding-bottom: .5em;
+    font-size: .6em;
+    width: 57%; }
+    @media (min-width: 576px) {
+      .article-intro .article-text {
+        padding-bottom: .7em;
+        font-size: .5em; } }
+    @media (min-width: 768px) {
+      .article-intro .article-text {
+        padding-bottom: 1em;
+        font-size: .8em; } }
+    @media (min-width: 1200px) {
+      .article-intro .article-text {
+        padding-bottom: 1.5em;
+        font-size: 1.2em; } }
+  
+  .article-intro .article-more {
+    background-color: #111;
+    border-color: #111;
+    font-size: .8em;
+    padding: .5em; }
+  
+  .article .h1, .article .h2, .article .h3, .article .h4, .article .h5, .article .h6 {
+    font-family: 'BebasNeue'; }
+  
+  .article img {
+    width: 100%;
+    height: auto; 
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.btn:focus {
+    outline: none;
+}
+
+a:not(.link) {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+footer .container, header .container {
+    max-width: 1000px;
+    padding: 0 10px;
+}
+footer {
+    background-color: rgb(191, 191, 191);
+}
+.list-style-none {
+    list-style:none;
+}
+
+footer .list-group {
+    list-style:none;
+}
+
+svg {
+    fill: rgb(108, 117, 125);
+}
+
+.fit-content {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
