@@ -887,4 +887,8 @@ footer {
     }
 }
 
+.invalid {
+    border-color: red !important;
+}
+
 
